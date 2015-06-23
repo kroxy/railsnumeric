@@ -1,7 +1,7 @@
-class NumercController < ApplicationController
+class NumbersController < ApplicationController
 
   def index
-    @numberrs=Number.all
+    @numbers=Number.all
   end
 
     def show
@@ -26,7 +26,7 @@ class NumercController < ApplicationController
     private
 
     def number_params
-      params.require(:number).permit(:number)
+      params.require(:number).permit(:num)
     end
   end
 
