@@ -1,7 +1,7 @@
 class NumbersController < ApplicationController
 
   def index
-    @numbers=Number.all
+
   end
 
     def show
@@ -19,9 +19,6 @@ class NumbersController < ApplicationController
          render :new
       end
     end
-
-
-
 
     private
 
